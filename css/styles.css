@@ -30,7 +30,6 @@ h2{
     font-family: "Ubuntu";
     font-size: 2rem;
     font-weight: bold;
-    
 }
 .nav-item{
     padding: 0 18px;
@@ -42,12 +41,22 @@ h2{
     margin: 5% 3% 5% 0;
 }
 .title-image{
-    width: 55%;
+    width: 22%;
     transform: rotate(25deg);
     margin-left: 6rem;
+    position: absolute;
+    right: 25%;
+}
+.container-fluid{
+    padding-bottom: 7%;
+
 }
 #features{
     padding:7% 15%;
+    position: relative;
+    /* position: absolute; //working as well */
+    z-index:1;
+    background-color: #fff;
 }
 .icon{
     font-size: 3rem;
@@ -99,3 +108,39 @@ h2{
 .pricing-column{
     padding: 3% 2%;
 }
+
+/* CTA section */
+
+.cta-heading{
+    font-family: "Montserrat";
+    font-size: 3.3rem;  
+    line-height: 1.5;  
+    font-weight: 900;
+}
+#cta{
+    background-color: #ff4c68;
+    color: white;
+    padding: 7% 15%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* footer section  */
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+.social-icon {
+    margin: 20px 10px;
+}
+@media (max-width: 1038px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        width: 50%;
+    }
+}
+
